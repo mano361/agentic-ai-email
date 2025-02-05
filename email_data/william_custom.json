@@ -1,0 +1,20 @@
+{
+    "email": {
+        "from": {
+            "name": "shireen naqvi",
+            "email": "shireennaqvi29@gmail.com"
+        },
+        "to": [
+            {
+                "name": "krishna vamshi",
+                "email": "krishnavamshikv08@gmail.com"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Requesting to update details",
+        "body": {
+            "text": "Dear Krishna,\n\nI hope you are doing well.\n\nI would like to request an update to my current employer details.Below are\nmy updated employment details, as well as my previous employment\ninformation for your reference.\n\nMy identity details :\n\n   - Name: William Brown\n   - Investor ID:1040\n   - DOB: 17-08-1975\n   - Mobile Number:3107778899\n   - Email Id: william.brown@example.com\n   - Address: Houston\n\n\nOld Employment Details:\n\n   - Company Name: Intel\n   - Designation: Embedded Systems Engineer\n   - Employment Duration: February 2019-June 2023\n   - Work Email Address:william.brown@intel.com\n   - Work Phone Number: 3107778899\n   - Address: Houston\n\nNew Employment Details:\n\n   - Company Name: Yahoo\n   - Designation: Manager\n   - Employment Duration:Jul 2023-Jan 2024\n   - Work Email Address:william.brown@yahoo.com\n   - Work Phone Number: 2025651234\n   - Address: New Jersey\n\n\nPlease update my details accordingly in the portal. Let me know if you require any information from my end.\nThank you for your prompt attention to this request. I look forward to hearing from you once the update is completed.\n\nThanks,\nWilliam\n"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "email": {
+        "from": {
+            "name": "shireen naqvi",
+            "email": "shireennaqvi29@gmail.com"
+        },
+        "to": [
+            {
+                "name": "shireen.naqvi@capgemini.com",
+                "email": "shireen.naqvi@capgemini.com"
+            },
+            {
+                "name": "krishna vamshi",
+                "email": "krishnavamshikv08@gmail.com"
+            }
+        ],
+        "cc": [],
+        "bcc": [],
+        "subject": "Request to update employer details",
+        "body": {
+            "text": "Dear Krishna,\n\nI hope you are doing well.\n\nI would like to request an update to my current employer details.Below are\nmy updated employment details, as well as my previous employment\ninformation for your reference.\n\nMy identity details :\n\n   - Name:                  Amit Patel\n   - Investor ID:          1033\n   - DOB:                    27-07-1985\n   - Mobile Number:   987654321\n   - Email Id:               amit.patel@gmail.com\n   - Address:              Bangalore\n\n\nOld Employment Details:\n\n   - Company Name:            Microsoft Bangalore\n   - Designation:                  Software Engineer\n   - Employment Duration:  Jan 2022-Feb 2024\n   - Work email Address:     amit.patel@microsoft.com\n   - Work Phone Number:   9876543210\n   - Address:                       Bangalore\n\n\nNew Employment Details:\n\n   - Company Name:           Google\n   - Designation:                  Software Engineer Lead\n   - Employment Duration:  Feb 2024-Feb 2024\n   - Work email Address:     amit.patel@google.com\n   - Work Phone Number:    9876543210\n   - Address:                         Hyderabad,India\n\n\nPlease update my details accordingly in the portal. Let me know if you\nrequire any information from my end.\nThank you for your prompt attention to this request. I look forward to\nhearing from you once the update is completed.\n\nThanks,\nAmit\n"
+        }
+    }
+}
