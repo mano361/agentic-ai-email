@@ -8,8 +8,8 @@ from psycopg2 import sql
 from swarm import Swarm, Agent
 import time # Make sure you have the Swarm library
 import random
-from email_users_investor_app import email_type_dispatcher
-import pythoncom
+#from email_users_investor_app import email_type_dispatcher
+#import pythoncom
  
 # Define the synonym map directly in the code
 synonym_map = {
@@ -550,7 +550,7 @@ with col2:
                     st.markdown("<div class='status-box'>✔️ Authorized User: Investor Verified.</div>", unsafe_allow_html=True)
                 elif investor_id == '1040':
                     st.markdown("<div class='error-box'>⚠️ Invalid Investor ID: Authorization Failed.</div>", unsafe_allow_html=True)
-                    email_type_dispatcher(email_type=4, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
+                    #email_type_dispatcher(email_type=4, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
                     st.text('Notification email sent to the customer about the failure.')
                     st.stop()  # Stop execution if investor ID is invalid
                 else:
@@ -568,7 +568,7 @@ with col2:
                     st.markdown("<div class='status-box'>✔️ Employment details verified successfully.</div>", unsafe_allow_html=True)
                 else:
                     st.markdown("<div class='error-box'>⚠️ Given Employer Details are not valid.</div>", unsafe_allow_html=True)
-                    email_type_dispatcher(email_type=4, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
+                    #email_type_dispatcher(email_type=4, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
                     st.text('Notification email sent to the customer about the failure.')
                     st.stop()  # Stop execution if employer details are invalid
 
@@ -579,7 +579,7 @@ with col2:
                 if investor_id == '1048':
                     print('Came to 1048 logic')
                     st.markdown("<div class='error-box'>⚠️ Missing work phone number: Cannot update records.</div>", unsafe_allow_html=True)
-                    email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
+                    #email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
                     st.text('Email sent to Customer')
                     st.stop()
                 # Fetching work_phone_number instead of work_phone
@@ -592,14 +592,14 @@ with col2:
 
                     if update_successful:
                         st.markdown("<div class='status-box'>✔️ Update Successful: Records updated in the database.</div>", unsafe_allow_html=True)
-                        email_type_dispatcher(email_type=1, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
+                        #email_type_dispatcher(email_type=1, to="manohar.murikipudi@capgemini.com", cc="", auto=True)
                         st.text('Confirmation email sent to the customer regarding the successful update.')
                     else:
                         st.markdown(f"<div class='error-box'>⚠️ Update Failed: {update_message}</div>", unsafe_allow_html=True)
                         #email_type_dispatcher(email_type=3, to="manohar.murikipudi@capgemini.com", cc="shireen.naqvi@capgemini.com", auto=True)
-                        email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
+                        #email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
                         st.text('Notification email sent to the customer about the failure.')
                 else:
                     st.markdown("<div class='error-box'>⚠️ Missing work phone number: Cannot update records.</div>", unsafe_allow_html=True)
-                    email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
+                    #email_type_dispatcher(email_type=2, to="manohar.murikipudi@capgemini.com", cc="", missing_values=["Work Phone Number"], auto=True)
                     st.text('Alert email sent to the customer regarding missing details.')
